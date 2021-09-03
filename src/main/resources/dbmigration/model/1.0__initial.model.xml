@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<migration xmlns="http://ebean-orm.github.io/xml/ns/dbmigration">
+    <changeSet type="apply">
+        <createTable name="user" pkName="pk_user">
+            <column name="id" type="bigint" primaryKey="true"/>
+            <column name="deleted_at" type="timestamp"/>
+            <column name="open_id" type="varchar"/>
+            <column name="nick_name" type="varchar"/>
+            <column name="avatar_url" type="varchar"/>
+            <column name="created_at" type="timestamp" notnull="true"/>
+            <column name="updated_at" type="timestamp" notnull="true"/>
+        </createTable>
+    </changeSet>
+</migration>
